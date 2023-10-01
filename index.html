@@ -9,9 +9,7 @@
 
 	<script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
 	<script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
-	<script>mermaid.initialize({startOnLoad: true});</script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
 
 	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
@@ -20,21 +18,6 @@
 
 	<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-
-	<script>
-		if (typeof navigator.serviceWorker !== 'undefined') {
-			navigator.serviceWorker.register('sw.js')
-		}
-	</script>
-
-	<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"></script>
-
-	<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
-
-	<script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
-
-	<script src="//cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
-
 </head>
 <body>
 <div id="app"></div>
@@ -73,14 +56,6 @@
 		},
 
 		themeColor: "#5d76ba", // this is the default 'vue' color
-		plugins: [
-			function (hook, vm) {
-				hook.doneEach(function () {
-					twemoji.parse(document);
-				});
-			},
-		],
-
 		repo: ''
 	}
 </script>
@@ -96,6 +71,7 @@
 <!-- 访问量统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<script>mermaid.initialize({startOnLoad: true});</script>
 
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
